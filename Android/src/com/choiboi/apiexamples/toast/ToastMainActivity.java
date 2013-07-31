@@ -39,10 +39,12 @@ public class ToastMainActivity extends Activity {
                 Toast.makeText(this, TOAST_4_LONG_MSG, Toast.LENGTH_LONG).show();
             }
         } else if (v.getId() == R.id.toast_custom_bg_button) {
+            // Get the layout you want and set the values inside that layout.
             View toastRoot = getLayoutInflater().inflate(R.layout.activity_toast_custom_toast, null);
             TextView tvToast = (TextView) toastRoot.findViewById(R.id.toast_textview);
             tvToast.setText(TOAST_CUSTOM_BG_MSG);
             
+            // Create new Toast object and set the view to the one you want.
             Toast toast = new Toast(getApplicationContext());
             toast.setView(toastRoot);
             toast.show();
