@@ -1,14 +1,15 @@
 package com.choiboi.apiexamples;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import com.choiboi.apiexamples.toast.ToastMainActivity;
 
 public class MainActivity extends Activity {
     
@@ -27,7 +28,10 @@ public class MainActivity extends Activity {
         
         listView.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
+                if (position == 0) {
+                    Intent intent = new Intent(getBaseContext(), ToastMainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
     }

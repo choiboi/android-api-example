@@ -2,5 +2,11 @@
 <resources>
 
     <string name="app_name">AndroidAPIExample</string>
+    
+    <!-- Toast Example -->
+    <string name="toast_title">Toast Example</string>
+    <string name="toast_main_title">Press button below to start toast!!</string>
+    <string name="toast_short_text">Toast with LENGTH_SHORT duration</string>
+    <string name="toast_long_text">Toast with LENGTH_LONG duration</string>
 
 </resources>

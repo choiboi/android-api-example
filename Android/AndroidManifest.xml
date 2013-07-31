@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.choiboi.apiexamples.toast.ToastMainActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/toast_title" >
+        </activity>
     </application>
-
 </manifest>
