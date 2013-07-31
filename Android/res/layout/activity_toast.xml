@@ -27,5 +27,29 @@
         android:layout_height="wrap_content"
         android:text="@string/toast_long_text"
         android:onClick="onButtonClick" />
+    
+    <Button
+        android:id="@+id/toast_4_short_button"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_4_short_text"
+        android:onClick="onButtonClick" />
+    
+    <Button
+        android:id="@+id/toast_4_long_button"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_4_long_text"
+        android:onClick="onButtonClick" />
+    
+    <Button
+        android:id="@+id/toast_custom_bg_button"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_custom_background"
+        android:onClick="onButtonClick" />
 
 </LinearLayout>

@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         listView.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
-                    Intent intent = new Intent(getBaseContext(), ToastMainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), ToastMainActivity.class);
                     startActivity(intent);
                 }
             }

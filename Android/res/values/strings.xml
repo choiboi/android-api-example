@@ -8,5 +8,8 @@
     <string name="toast_main_title">Press button below to start toast!!</string>
     <string name="toast_short_text">Toast with LENGTH_SHORT duration</string>
     <string name="toast_long_text">Toast with LENGTH_LONG duration</string>
+    <string name="toast_4_short_text">Toast with 4 times LENGTH_SHORT duration</string>
+    <string name="toast_4_long_text">Toast with 4 times LENGTH_LONG duration</string>
+    <string name="toast_custom_background">Toast with Custom Background</string>
 
 </resources>
