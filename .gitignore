@@ -1,0 +1,23 @@
+# Binary and Other Miscellenous Directories.
+bin/
+gen/
+
+# Stupid MAC Files.
+.DS_STORE
+
+# Eclipse Files.
+.classpath
+.project
+
+# Java Files.
+*.class
+
+# Dalvik VM Files.
+*.dex
+
+# Local Configuration Files.
+local.properties
+project.properties
+lint.xml
+.settings/
+
