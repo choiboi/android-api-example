@@ -9,11 +9,12 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.choiboi.apiexamples.camera.CameraMainActivity;
 import com.choiboi.apiexamples.toast.ToastMainActivity;
 
 public class MainActivity extends Activity {
     
-    private final String[] LIST = new String[]{ "Toast" };
+    private final String[] LIST = new String[]{ "Toast", "Camera Intent" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,9 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
                     Intent intent = new Intent(getApplicationContext(), ToastMainActivity.class);
+                    startActivity(intent);
+                } else if (position == 1) {
+                    Intent intent = new Intent(getApplicationContext(), CameraMainActivity.class);
                     startActivity(intent);
                 }
             }

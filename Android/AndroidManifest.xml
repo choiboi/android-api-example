@@ -28,5 +28,10 @@
             android:configChanges="keyboardHidden"
             android:label="@string/toast_title" >
         </activity>
+        <activity
+            android:name="com.choiboi.apiexamples.camera.CameraMainActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/camera_title" >
+        </activity>
     </application>
 </manifest>

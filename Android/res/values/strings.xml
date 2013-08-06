@@ -11,5 +11,8 @@
     <string name="toast_4_short_text">Toast with 4 times LENGTH_SHORT duration</string>
     <string name="toast_4_long_text">Toast with 4 times LENGTH_LONG duration</string>
     <string name="toast_custom_background">Toast with Custom Background</string>
+    
+    <!-- Camera Example -->
+    <string name="camera_title">Camera Example</string>
 
 </resources>
