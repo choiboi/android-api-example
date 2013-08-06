@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">AndroidAPIExample</string>
+    <string name="imageview_content_description">ImageView</string>
     
     <!-- Toast Example -->
     <string name="toast_title">Toast Example</string>
@@ -14,5 +15,7 @@
     
     <!-- Camera Example -->
     <string name="camera_title">Camera Example</string>
+    <string name="camera_with_filepath_text">Start camera with specified filepath</string>
+    <string name="camera_without_filepath_text">Start camera w/o specified filepath</string>
 
 </resources>

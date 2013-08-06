@@ -14,7 +14,7 @@ import com.choiboi.apiexamples.toast.ToastMainActivity;
 
 public class MainActivity extends Activity {
     
-    private final String[] LIST = new String[]{ "Toast", "Camera Intent" };
+    private final String[] LIST = new String[]{ "Toast", "Camera" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
