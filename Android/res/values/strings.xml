@@ -18,5 +18,9 @@
     <string name="camera_main_title">Press buttons below to start camera intent!!</string>
     <string name="camera_with_filepath_text">Start camera with specified filepath</string>
     <string name="camera_without_filepath_text">Start camera w/o specified filepath</string>
+    
+    <!-- Gallery Example -->
+    <string name="gallery_title">Gallery Example</string>
+    <string name="gallery_main_title">Press buttons below to start gallery intent!!</string>
 
 </resources>

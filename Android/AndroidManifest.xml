@@ -38,5 +38,11 @@
             android:screenOrientation="portrait"
             android:label="@string/camera_title" >
         </activity>
+        <activity
+            android:name="com.choiboi.apiexamples.gallery.GalleryMainActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/camera_title" >
+        </activity>
     </application>
 </manifest>
