@@ -22,5 +22,7 @@
     <!-- Gallery Example -->
     <string name="gallery_title">Gallery Example</string>
     <string name="gallery_main_title">Press buttons below to start gallery intent!!</string>
+    <string name="gallery_only_text">Gallery Only Prompt</string>
+    <string name="gallery_chooser_text">Select Gallery Prompt</string>
 
 </resources>

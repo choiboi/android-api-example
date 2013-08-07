@@ -4,5 +4,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/gallery_main_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/gallery_intent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gallery_only_text"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/gallery_chooser_intent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gallery_chooser_text"
+        android:onClick="onButtonClick" />
+
+    <ImageView
+        android:id="@+id/gallery_image"
+        android:contentDescription="@string/imageview_content_description"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher" />
 
 </LinearLayout>

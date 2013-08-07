@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.choiboi.apiexamples.camera.CameraMainActivity;
+import com.choiboi.apiexamples.gallery.GalleryMainActivity;
 import com.choiboi.apiexamples.toast.ToastMainActivity;
 
 public class MainActivity extends Activity {
@@ -34,6 +35,9 @@ public class MainActivity extends Activity {
                     startActivity(intent);
                 } else if (position == 1) {
                     Intent intent = new Intent(getApplicationContext(), CameraMainActivity.class);
+                    startActivity(intent);
+                } else if (position == 2) {
+                    Intent intent = new Intent(getApplicationContext(), GalleryMainActivity.class);
                     startActivity(intent);
                 }
             }
