@@ -12,6 +12,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.choiboi.apiexamples.R;
 
@@ -85,6 +86,7 @@ public class CameraMainActivity extends Activity {
                 String filepath = getOutputLink(TEMP_JPEG_FILENAME);
                 Bitmap img = BitmapFactory.decodeFile(filepath);
                 mImage.setImageBitmap(img);
+                Toast.makeText(this, "Image is saved in: " + filepath, Toast.LENGTH_SHORT).show();
             }
         }
     }
