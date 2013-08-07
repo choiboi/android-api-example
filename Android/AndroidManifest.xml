@@ -10,8 +10,6 @@
     
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    
-    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
@@ -31,11 +29,13 @@
         <activity
             android:name="com.choiboi.apiexamples.toast.ToastMainActivity"
             android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
             android:label="@string/toast_title" >
         </activity>
         <activity
             android:name="com.choiboi.apiexamples.camera.CameraMainActivity"
             android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
             android:label="@string/camera_title" >
         </activity>
     </application>

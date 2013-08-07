@@ -12,7 +12,6 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.choiboi.apiexamples.R;
 
@@ -36,17 +35,22 @@ public class CameraMainActivity extends Activity {
     
     public void onButtonClick(View v) {
         if (v.getId() == R.id.camera_no_filepath_button) {
+            // Start camera intent without specified filepath.
             Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             startActivityForResult(cameraIntent, CAMERA_NO_FILEPATH);
         } else if (v.getId() == R.id.camera_filepath_button) {
+            // Create a new File object with specified filepath, where the
+            // captured image will be located.
             File file = new File(getOutputLink(TEMP_JPEG_FILENAME));
-            
             Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
             startActivityForResult(cameraIntent, CAMERA_WITH_FILEPATH);
         }
     }
 
+    /*
+     * Creates a new file path into the standard Android pictures directory.
+     */
     private String getOutputLink(String filename) {
         String directory = "";
 
@@ -54,7 +58,7 @@ public class CameraMainActivity extends Activity {
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), 
                                                     getResources().getString(R.string.app_name));
-            // Create the storage directory if it does not exist
+            // Create the storage directory if it does not exist.
             if (!mediaStorageDir.exists()) {
                 if (!mediaStorageDir.mkdirs()) {
                     return null;
@@ -71,9 +75,13 @@ public class CameraMainActivity extends Activity {
         
         if (resultCode == RESULT_OK) {
             if (requestCode == CAMERA_NO_FILEPATH) {
-                String filepath = data.getData().toString();
-                Toast.makeText(this, "image: " + filepath, Toast.LENGTH_SHORT).show();
+                // Get the image from intent data.
+                Bundle bundle = data.getExtras();
+                Bitmap img = (Bitmap) bundle.get("data");
+                mImage.setImageBitmap(img);
             } else if (requestCode == CAMERA_WITH_FILEPATH) {
+                // Get the image from the filepath you specified when you
+                // started the camera intent.
                 String filepath = getOutputLink(TEMP_JPEG_FILENAME);
                 Bitmap img = BitmapFactory.decodeFile(filepath);
                 mImage.setImageBitmap(img);
