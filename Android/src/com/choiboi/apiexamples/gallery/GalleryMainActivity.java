@@ -85,6 +85,7 @@ public class GalleryMainActivity extends Activity {
                 if (!new File(filepath).exists()) {
                     Toast.makeText(this, "Image does not exist.", Toast.LENGTH_SHORT).show();
                 } else {
+                    // Display image in ImageView.
                     Bitmap img = BitmapFactory.decodeFile(filepath);
                     mImage.setImageBitmap(img);
                 }
