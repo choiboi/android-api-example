@@ -12,6 +12,11 @@ Examples of using various available APIs for Android development.
  5. Select the "Android" folder and click "Open"
  6. Select "Finish" and the project should appear in your "Package Explorer"
 
+####Instructions For Implementing Android APIs
+ * [Android Toast Example](http://choiboijames.blogspot.ca/2013/08/android-toast-example.html)
+ * [Android Camera Intent Example](http://choiboijames.blogspot.ca/2013/08/android-camera-intent-example.html)
+ * [Android Gallery Intent Example](http://choiboijames.blogspot.ca/2013/08/android-gallery-intent-example.html)
+
 ####License
 ```
  Copyright (C) 2013  James Choi
