@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_class_implement_onclicklistener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_implement_onclick_listener_text" />
+
+    <Button
+        android:id="@+id/button_object_onclicklistener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_set_button_object_listener_text" />
+
+    <Button
+        android:id="@+id/button_xml_attribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_xml_attribute_text"
+        android:onClick="onButtonPressed" />
+
+</LinearLayout>

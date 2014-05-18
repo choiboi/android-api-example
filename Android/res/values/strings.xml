@@ -24,5 +24,11 @@
     <string name="gallery_main_title">Press buttons below to start gallery intent!!</string>
     <string name="gallery_only_text">Gallery Only Prompt</string>
     <string name="gallery_chooser_text">Select Gallery Prompt</string>
+    
+    <!-- Button Listener Example -->
+    <string name="button_listener_title">Button Listener Example</string>
+    <string name="button_implement_onclick_listener_text">Button with implement OnClickListener</string>
+    <string name="button_set_button_object_listener_text">Button with setting button object with OnClickListener</string>
+    <string name="button_xml_attribute_text">Button invoke through XML attribute</string>
 
 </resources>
