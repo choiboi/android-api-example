@@ -3,6 +3,7 @@ package com.choiboi.apiexamples;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -31,25 +32,24 @@ public class MainActivity extends Activity {
         
         listView.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent;
+                Log.d("TAG", "position: " + position);
+                Intent intent = null;
                 
                 switch(position) {
                 case 0:
                     intent = new Intent(getApplicationContext(), ToastMainActivity.class);
-                    startActivity(intent);
                     break;
                 case 1:
                     intent = new Intent(getApplicationContext(), CameraMainActivity.class);
-                    startActivity(intent);
                     break;
                 case 2:
                     intent = new Intent(getApplicationContext(), GalleryMainActivity.class);
-                    startActivity(intent);
                     break;
                 case 3:
                     intent = new Intent(getApplicationContext(), ButtonMainActivity.class);
                     break;
                 }
+                startActivity(intent);
             }
         });
     }

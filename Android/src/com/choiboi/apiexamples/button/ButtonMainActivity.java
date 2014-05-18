@@ -33,12 +33,15 @@ public class ButtonMainActivity extends Activity implements OnClickListener {
             }
         });
     }
-
+    
+    // Overriden onClick method. This method will invoke for buttons that has been set with the on click listener
+    // with this class.
     @Override
     public void onClick(View v) {
         Toast.makeText(this, "Button listener implemented through this class pressed!", Toast.LENGTH_LONG).show();
     }
     
+    // This method will invoke with the button that has the xml attribute onClick set with this method name.
     public void onButtonPressed(View v) {
         Toast.makeText(this, "Button listener implemented xml onClick attribute!", Toast.LENGTH_LONG).show();
     }
